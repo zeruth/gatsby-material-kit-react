@@ -36,7 +36,7 @@ class Components extends React.Component {
     return (
       <div>
         <Header
-          brand="Material Kit React"
+          brand="OpenOSRS"
           rightLinks={<HeaderLinks />}
           fixed
           color="transparent"
@@ -51,9 +51,9 @@ class Components extends React.Component {
             <GridContainer>
               <GridItem>
                 <div className={classes.brand}>
-                  <h1 className={classes.title}>Material Kit React.</h1>
+                  <h1 className={classes.title}>OpenOSRS</h1>
                   <h3 className={classes.subtitle}>
-                    A Badass Material-UI Kit based on Material Design.
+                    An open source third party client for Old School Runescape.
                   </h3>
                 </div>
               </GridItem>

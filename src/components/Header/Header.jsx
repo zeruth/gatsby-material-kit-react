@@ -73,6 +73,7 @@ class Header extends React.Component {
       [classes.absolute]: absolute,
       [classes.fixed]: fixed
     });
+    const brandImage = <Button className={classes.title}>test</Button>;
     const brandComponent = <Button className={classes.title}>{brand}</Button>;
     return (
       <AppBar className={appBarClasses}>

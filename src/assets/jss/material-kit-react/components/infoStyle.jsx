@@ -1,11 +1,10 @@
 import {
-  primaryColor,
-  warningColor,
-  dangerColor,
-  successColor,
-  infoColor,
-  roseColor,
-  grayColor,
+  PRIMARY,
+  SECONDARY,
+  INFO,
+  WARNING,
+  ERROR,
+  ROSE,
   title
 } from "assets/jss/material-kit-react.jsx";
 
@@ -21,37 +20,37 @@ const infoStyle = {
     marginRight: "10px"
   },
   primary: {
-    color: primaryColor
+    color: PRIMARY
   },
   warning: {
-    color: warningColor
+    color: WARNING
   },
   danger: {
-    color: dangerColor
+    color: ERROR
   },
   success: {
-    color: successColor
+    color: INFO
   },
   info: {
-    color: infoColor
+    color: INFO
   },
   rose: {
-    color: roseColor
+    color: ROSE
   },
   gray: {
-    color: grayColor
+    color: SECONDARY
   },
   icon: {
     width: "36px",
     height: "36px"
   },
   descriptionWrapper: {
-    color: grayColor,
+    color: SECONDARY,
     overflow: "hidden"
   },
   title,
   description: {
-    color: grayColor,
+    color: SECONDARY,
     overflow: "hidden",
     marginTop: "0px",
     fontSize: "14px"

@@ -1,8 +1,8 @@
 import {
-  primaryColor,
-  dangerColor,
-  roseColor,
-  grayColor
+  PRIMARY,
+  ERROR,
+  INFO,
+  SECONDARY
 } from "assets/jss/material-kit-react.jsx";
 
 const customCheckboxRadioSwitch = {
@@ -31,7 +31,7 @@ const customCheckboxRadioSwitch = {
     marginBottom: "0"
   },
   checked: {
-    color: primaryColor + "!important"
+    color: PRIMARY + "!important"
   },
   checkedIcon: {
     width: "20px",
@@ -86,15 +86,15 @@ const customCheckboxRadioSwitch = {
     marginRight: "0"
   },
   labelError: {
-    color: dangerColor
+    color: ERROR
   },
   radio: {
-    color: primaryColor + "!important"
+    color: PRIMARY + "!important"
   },
   radioChecked: {
     width: "16px",
     height: "16px",
-    border: "1px solid " + primaryColor,
+    border: "1px solid " + PRIMARY,
     borderRadius: "50%"
   },
   radioUnchecked: {
@@ -110,7 +110,7 @@ const customCheckboxRadioSwitch = {
   iconCheckbox: {
     height: "116px",
     width: "116px",
-    color: grayColor,
+    color: SECONDARY,
     "& > span:first-child": {
       borderWidth: "4px",
       borderStyle: "solid",
@@ -123,16 +123,16 @@ const customCheckboxRadioSwitch = {
       transition: "all 0.2s"
     },
     "&:hover": {
-      color: roseColor,
+      color: INFO,
       "& > span:first-child": {
-        borderColor: roseColor
+        borderColor: INFO
       }
     }
   },
   iconCheckboxChecked: {
-    color: roseColor,
+    color: INFO,
     "& > span:first-child": {
-      borderColor: roseColor
+      borderColor: INFO
     }
   },
   iconCheckboxIcon: {
@@ -140,7 +140,7 @@ const customCheckboxRadioSwitch = {
     lineHeight: "111px"
   },
   switchBase: {
-    color: primaryColor + "!important"
+    color: PRIMARY + "!important"
   },
   switchIcon: {
     boxShadow: "0 1px 3px 1px rgba(0, 0, 0, 0.4)",

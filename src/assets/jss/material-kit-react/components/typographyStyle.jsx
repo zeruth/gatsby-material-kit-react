@@ -1,10 +1,9 @@
 import {
   defaultFont,
-  primaryColor,
-  infoColor,
-  successColor,
-  warningColor,
-  dangerColor
+  PRIMARY,
+  INFO,
+  WARNING,
+  ERROR
 } from "assets/jss/material-kit-react.jsx";
 
 const typographyStyle = {
@@ -36,19 +35,19 @@ const typographyStyle = {
     color: "#777"
   },
   primaryText: {
-    color: primaryColor
+    color: PRIMARY
   },
   infoText: {
-    color: infoColor
+    color: INFO
   },
   successText: {
-    color: successColor
+    color: INFO
   },
   warningText: {
-    color: warningColor
+    color: WARNING
   },
   dangerText: {
-    color: dangerColor
+    color: ERROR
   },
   smallText: {
     fontSize: "65%",

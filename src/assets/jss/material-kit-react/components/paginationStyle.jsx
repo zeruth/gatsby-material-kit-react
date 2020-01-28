@@ -1,10 +1,9 @@
 import {
-  grayColor,
-  primaryColor,
-  infoColor,
-  successColor,
-  warningColor,
-  dangerColor
+  SECONDARY,
+  PRIMARY,
+  INFO,
+  WARNING,
+  ERROR
 } from "assets/jss/material-kit-react.jsx";
 
 const paginationStyle = {
@@ -39,7 +38,7 @@ const paginationStyle = {
     textDecoration: "none",
     boxSizing: "border-box",
     "&,&:hover,&:focus": {
-      color: grayColor
+      color: SECONDARY
     },
     "&:hover,&:focus": {
       zIndex: "3",
@@ -52,8 +51,8 @@ const paginationStyle = {
   },
   primary: {
     "&,&:hover,&:focus": {
-      backgroundColor: primaryColor,
-      borderColor: primaryColor,
+      backgroundColor: PRIMARY,
+      borderColor: PRIMARY,
       color: "#FFFFFF",
       boxShadow:
         "0 4px 5px 0 rgba(156, 39, 176, 0.14), 0 1px 10px 0 rgba(156, 39, 176, 0.12), 0 2px 4px -1px rgba(156, 39, 176, 0.2)"
@@ -65,8 +64,8 @@ const paginationStyle = {
   },
   info: {
     "&,&:hover,&:focus": {
-      backgroundColor: infoColor,
-      borderColor: infoColor,
+      backgroundColor: INFO,
+      borderColor: INFO,
       color: "#FFFFFF",
       boxShadow:
         "0 4px 5px 0 rgba(0, 188, 212, 0.14), 0 1px 10px 0 rgba(0, 188, 212, 0.12), 0 2px 4px -1px rgba(0, 188, 212, 0.2)"
@@ -78,8 +77,8 @@ const paginationStyle = {
   },
   success: {
     "&,&:hover,&:focus": {
-      backgroundColor: successColor,
-      borderColor: successColor,
+      backgroundColor: INFO,
+      borderColor: INFO,
       color: "#FFFFFF",
       boxShadow:
         "0 4px 5px 0 rgba(76, 175, 80, 0.14), 0 1px 10px 0 rgba(76, 175, 80, 0.12), 0 2px 4px -1px rgba(76, 175, 80, 0.2)"
@@ -91,8 +90,8 @@ const paginationStyle = {
   },
   warning: {
     "&,&:hover,&:focus": {
-      backgroundColor: warningColor,
-      borderColor: warningColor,
+      backgroundColor: WARNING,
+      borderColor: WARNING,
       color: "#FFFFFF",
       boxShadow:
         "0 4px 5px 0 rgba(255, 152, 0, 0.14), 0 1px 10px 0 rgba(255, 152, 0, 0.12), 0 2px 4px -1px rgba(255, 152, 0, 0.2)"
@@ -104,8 +103,8 @@ const paginationStyle = {
   },
   danger: {
     "&,&:hover,&:focus": {
-      backgroundColor: dangerColor,
-      borderColor: dangerColor,
+      backgroundColor: ERROR,
+      borderColor: ERROR,
       color: "#FFFFFF",
       boxShadow:
         "0 4px 5px 0 rgba(244, 67, 54, 0.14), 0 1px 10px 0 rgba(244, 67, 54, 0.12), 0 2px 4px -1px rgba(244, 67, 54, 0.2)"

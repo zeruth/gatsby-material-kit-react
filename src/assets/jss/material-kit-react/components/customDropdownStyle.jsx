@@ -1,16 +1,17 @@
 import {
   defaultFont,
-  primaryColor,
   primaryBoxShadow,
-  infoColor,
   infoBoxShadow,
-  successColor,
   successBoxShadow,
-  warningColor,
   warningBoxShadow,
-  dangerColor,
   dangerBoxShadow,
-  roseColor,
+  PRIMARY,
+  SECONDARY,
+  SECONDARY_DARK,
+  INFO,
+  WARNING,
+  ERROR,
+  ROSE,
   roseBoxShadow
 } from "assets/jss/material-kit-react.jsx";
 
@@ -30,7 +31,7 @@ const customDropdownStyle = theme => ({
     fontSize: "14px",
     textAlign: "left",
     listStyle: "none",
-    backgroundColor: "#fff",
+    backgroundColor: SECONDARY_DARK,
     backgroundClip: "padding-box"
   },
   menuList: {
@@ -44,7 +45,7 @@ const customDropdownStyle = theme => ({
       float: "none",
       width: "auto",
       marginTop: "0",
-      backgroundColor: "transparent",
+      backgroundColor: SECONDARY_DARK,
       border: "0",
       boxShadow: "none",
       color: "black"
@@ -62,56 +63,57 @@ const customDropdownStyle = theme => ({
     clear: "both",
     fontWeight: "400",
     height: "fit-content",
-    color: "#333",
+    color: PRIMARY,
+    backgroundColor: SECONDARY_DARK,
     whiteSpace: "nowrap"
   },
   blackHover: {
     "&:hover": {
       boxShadow:
         "0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(33, 33, 33, 0.4)",
-      backgroundColor: "#212121",
+      backgroundColor: SECONDARY_DARK,
       color: "#fff"
     }
   },
   primaryHover: {
     "&:hover": {
-      backgroundColor: primaryColor,
-      color: "#FFFFFF",
+      backgroundColor: PRIMARY,
+      color: SECONDARY_DARK,
       ...primaryBoxShadow
     }
   },
   infoHover: {
     "&:hover": {
-      backgroundColor: infoColor,
-      color: "#FFFFFF",
+      backgroundColor: INFO,
+      color: SECONDARY_DARK,
       ...infoBoxShadow
     }
   },
   successHover: {
     "&:hover": {
-      backgroundColor: successColor,
-      color: "#FFFFFF",
+      backgroundColor: INFO,
+      color: SECONDARY_DARK,
       ...successBoxShadow
     }
   },
   warningHover: {
     "&:hover": {
-      backgroundColor: warningColor,
-      color: "#FFFFFF",
+      backgroundColor: WARNING,
+      color: SECONDARY_DARK,
       ...warningBoxShadow
     }
   },
   dangerHover: {
     "&:hover": {
-      backgroundColor: dangerColor,
-      color: "#FFFFFF",
+      backgroundColor: ERROR,
+      color: SECONDARY_DARK,
       ...dangerBoxShadow
     }
   },
   roseHover: {
     "&:hover": {
-      backgroundColor: roseColor,
-      color: "#FFFFFF",
+      backgroundColor: ROSE,
+      color: SECONDARY_DARK,
       ...roseBoxShadow
     }
   },

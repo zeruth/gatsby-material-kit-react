@@ -1,11 +1,10 @@
 import {
-  primaryColor,
-  warningColor,
-  dangerColor,
-  successColor,
-  infoColor,
-  roseColor,
-  grayColor
+  PRIMARY,
+  WARNING,
+  ERROR,
+  INFO,
+  ROSE,
+  SECONDARY
 } from "assets/jss/material-kit-react.jsx";
 
 const customLinearProgressStyle = {
@@ -18,25 +17,25 @@ const customLinearProgressStyle = {
     height: "4px"
   },
   primary: {
-    backgroundColor: primaryColor
+    backgroundColor: PRIMARY
   },
   warning: {
-    backgroundColor: warningColor
+    backgroundColor: WARNING
   },
   danger: {
-    backgroundColor: dangerColor
+    backgroundColor: ERROR
   },
   success: {
-    backgroundColor: successColor
+    backgroundColor: INFO
   },
   info: {
-    backgroundColor: infoColor
+    backgroundColor: INFO
   },
   rose: {
-    backgroundColor: roseColor
+    backgroundColor: ROSE
   },
   gray: {
-    backgroundColor: grayColor
+    backgroundColor: SECONDARY
   },
   primaryBackground: {
     background: "rgba(156, 39, 176, 0.2)"

@@ -1,9 +1,9 @@
-import { container, title } from "assets/jss/material-kit-react.jsx";
+import { container, title, PRIMARY,  PRIMARY_DARK, SECONDARY_LIGHT, SECONDARY_DARK   } from "assets/jss/material-kit-react.jsx";
 
 const landingPageStyle = {
   container: {
     zIndex: "12",
-    color: "#FFFFFF",
+    color: PRIMARY_DARK,
     ...container
   },
   title: {
@@ -12,7 +12,7 @@ const landingPageStyle = {
     position: "relative",
     marginTop: "30px",
     minHeight: "32px",
-    color: "#FFFFFF",
+    color: PRIMARY,
     textDecoration: "none"
   },
   subtitle: {
@@ -21,7 +21,7 @@ const landingPageStyle = {
     margin: "10px auto 0"
   },
   main: {
-    background: "#FFFFFF",
+    background: SECONDARY_DARK,
     position: "relative",
     zIndex: "3"
   },

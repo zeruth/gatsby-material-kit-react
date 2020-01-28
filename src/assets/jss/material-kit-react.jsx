@@ -20,6 +20,20 @@
 
 const drawerWidth = 260;
 
+const PRIMARY = "#1976d2";            // blue-700
+const PRIMARY_LIGHT = "#2196f3";      // blue-500
+const PRIMARY_DARK = "#0d47a1";       // blue-900
+
+const SECONDARY = "#455a64";          // blue-grey-700
+const SECONDARY_LIGHT = "#607d8b";    // blue-grey-500
+const SECONDARY_DARK = "#263238";     // blue-grey-900
+
+const INFO = "#673ab7";               // deep-purple-500
+const WARNING = "#ffc107";            // amber-500
+const ERROR = "#b71c1c";              // red-900
+
+const ROSE = "#26a69a";
+
 const transition = {
   transition: "all 0.33s cubic-bezier(0.685, 0.0473, 0.346, 1)"
 };
@@ -68,14 +82,6 @@ const defaultFont = {
   fontWeight: "300",
   lineHeight: "1.5em"
 };
-
-const primaryColor = "#9c27b0";
-const warningColor = "#ff9800";
-const dangerColor = "#f44336";
-const successColor = "#4caf50";
-const infoColor = "#00acc1";
-const roseColor = "#e91e63";
-const grayColor = "#999999";
 
 const primaryBoxShadow = {
   boxShadow:
@@ -156,7 +162,7 @@ const defaultBoxShadow = {
 };
 
 const title = {
-  color: "#3C4858",
+  color: PRIMARY,
   margin: "1.75rem 0 0.875rem",
   textDecoration: "none",
   fontWeight: "700",
@@ -182,19 +188,22 @@ const cardSubtitle = {
 export {
   //variables
   drawerWidth,
+  PRIMARY,
+  PRIMARY_LIGHT,
+  PRIMARY_DARK,
+  SECONDARY,
+  SECONDARY_LIGHT,
+  SECONDARY_DARK,
+  INFO,
+  WARNING,
+  ERROR,
+  ROSE,
   transition,
   container,
   conatinerFluid,
   boxShadow,
   card,
   defaultFont,
-  primaryColor,
-  warningColor,
-  dangerColor,
-  successColor,
-  infoColor,
-  roseColor,
-  grayColor,
   primaryBoxShadow,
   infoBoxShadow,
   successBoxShadow,

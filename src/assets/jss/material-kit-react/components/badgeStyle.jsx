@@ -1,10 +1,10 @@
 import {
-  primaryColor,
-  warningColor,
-  dangerColor,
-  successColor,
-  infoColor,
-  roseColor
+  PRIMARY,
+  WARNING,
+  ERROR,
+  INFO,
+  ROSE,
+  SECONDARY
 } from "assets/jss/material-kit-react.jsx";
 
 const badgeStyle = {
@@ -23,25 +23,25 @@ const badgeStyle = {
     display: "inline-block"
   },
   primary: {
-    backgroundColor: primaryColor
+    backgroundColor: PRIMARY
   },
   warning: {
-    backgroundColor: warningColor
+    backgroundColor: WARNING
   },
   danger: {
-    backgroundColor: dangerColor
+    backgroundColor: ERROR
   },
   success: {
-    backgroundColor: successColor
+    backgroundColor: INFO
   },
   info: {
-    backgroundColor: infoColor
+    backgroundColor: INFO
   },
   rose: {
-    backgroundColor: roseColor
+    backgroundColor: ROSE
   },
   gray: {
-    backgroundColor: "#6c757d"
+    backgroundColor: SECONDARY
   }
 };
 

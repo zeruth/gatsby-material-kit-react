@@ -13,7 +13,7 @@ import Tooltip from "@material-ui/core/Tooltip";
 import { Apps, CloudDownload } from "@material-ui/icons";
 
 // React icons
-import { FaTwitter, FaFacebook, FaInstagram } from 'react-icons/fa';
+import { FaDiscord, FaGithub } from 'react-icons/fa';
 
 // core components
 import CustomDropdown from "components/CustomDropdown/CustomDropdown.jsx";
@@ -35,77 +35,82 @@ function HeaderLinks({ ...props }) {
           }}
           buttonIcon={Apps}
           dropdownList={[
+            /*
             <Link to="/" className={classes.dropdownLink}>
-              All components
-            </Link>,
+              Home
+            </Link>,*/
             <a
-              href="https://creativetimofficial.github.io/material-kit-react/#/documentation"
+              href="https://github.com/open-osrs/runelite"
               target="_blank"
               className={classes.dropdownLink}
             >
-              Documentation
+              runelite
+            </a>,
+            <a
+              href="https://github.com/open-osrs/launcher"
+              target="_blank"
+              className={classes.dropdownLink}
+            >
+              launcher
+            </a>,
+            <a
+              href="https://github.com/open-osrs/hosting"
+              target="_blank"
+              className={classes.dropdownLink}
+            >
+              hosting
+            </a>,
+            <a
+              href="https://github.com/open-osrs/openosrs-injector"
+              target="_blank"
+              className={classes.dropdownLink}
+            >
+              openosrs-injector
             </a>
           ]}
         />
       </ListItem>
       <ListItem className={classes.listItem}>
         <Button
-          href="https://www.creative-tim.com/product/material-kit-react"
+          href="https://github.com/open-osrs/launcher/releases/latest"
           color="transparent"
           target="_blank"
           className={classes.navLink}
         >
-          <CloudDownload className={classes.icons} /> Download
+          <CloudDownload className={classes.icons} /> Download Latest Launcher
         </Button>
       </ListItem>
       <ListItem className={classes.listItem}>
         <Tooltip
-          id="instagram-twitter"
-          title="Follow us on twitter"
+          id="discord"
+          title="Join our Discord"
           placement={typeof window !== 'undefined' && window.innerWidth > 959 ? "top" : "left"}
           classes={{ tooltip: classes.tooltip }}
         >
           <Button
-            href="https://twitter.com/CreativeTim"
+            href="https://discord.gg/OpenOSRS"
             target="_blank"
             color="transparent"
             className={classes.navLink}
           >
-            <FaTwitter/>
+            <FaDiscord/>
           </Button>
         </Tooltip>
       </ListItem>
       <ListItem className={classes.listItem}>
         <Tooltip
-          id="instagram-facebook"
-          title="Follow us on facebook"
+          id="github"
+          title="Browse our github repos"
           placement={typeof window !== 'undefined' && window.innerWidth > 959 ? "top" : "left"}
           classes={{ tooltip: classes.tooltip }}
         >
           <Button
             color="transparent"
-            href="https://www.facebook.com/CreativeTim"
+            href="https://www.github.com/open-osrs"
             target="_blank"
             className={classes.navLink}
           >
-            <FaFacebook/>
-          </Button>
-        </Tooltip>
-      </ListItem>
-      <ListItem className={classes.listItem}>
-        <Tooltip
-          id="instagram-tooltip"
-          title="Follow us on instagram"
-          placement={typeof window !== 'undefined' && window.innerWidth > 959 ? "top" : "left"}
-          classes={{ tooltip: classes.tooltip }}
-        >
-          <Button
-            color="transparent"
-            href="https://www.instagram.com/CreativeTimOfficial"
-            target="_blank"
-            className={classes.navLink}
-          >
-            <FaInstagram/>
+            <FaGithub/>
           </Button>
         </Tooltip>
       </ListItem>

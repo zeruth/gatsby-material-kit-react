@@ -7,7 +7,7 @@ import withStyles from "@material-ui/core/styles/withStyles";
 // @material-ui/icons
 
 // React icons
-import { FaPlay } from 'react-icons/fa';
+import { FaDiscord, FaGithub } from 'react-icons/fa';
 
 // core components
 import Header from "components/Header/Header.jsx";
@@ -28,6 +28,7 @@ import WorkSection from "./Sections/WorkSection.jsx";
 const dashboardRoutes = [];
 
 class LandingPage extends React.Component {
+
   render() {
     const { classes, ...rest } = this.props;
     return (
@@ -35,38 +36,35 @@ class LandingPage extends React.Component {
         <Header
           color="transparent"
           routes={dashboardRoutes}
-          brand="Material Kit React"
+          brand="OpenOSRS"
           rightLinks={<HeaderLinks />}
           fixed
           changeColorOnScroll={{
             height: 400,
-            color: "white"
+            color: "primary"
           }}
           {...rest}
         />
-        <Parallax filter image={require("assets/img/landing-bg.jpg")}>
+        <Parallax filter image={require("assets/img/blue-flames.jpg")}>
           <div className={classes.container}>
-            <GridContainer>
-              <GridItem xs={12} sm={12} md={6}>
-                <h1 className={classes.title}>Your Story Starts With Us.</h1>
-                <h4>
-                  Every landing page needs a small description after the big
-                  bold title, that's why we added this text here. Add here all
-                  the information that can make you or your product create the
-                  first impression.
-                </h4>
-                <br />
-                <Button
-                  color="danger"
-                  size="lg"
-                  href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <FaPlay/>
-                  Watch video
-                </Button>
-              </GridItem>
+            <GridContainer justify={"center"}>
+              <h1 className={classes.title}>Welcome to OpenOSRS</h1>
+              <h3>
+                With our open source client, anything is possible in Old School Runescape
+              </h3>
+            </GridContainer>
+            <GridContainer justify={"center"}>
+              <br />
+              <Button
+                color="primary"
+                size="lg"
+                href="https://github.com/open-osrs/launcher/releases/latest"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaGithub/>
+                Download Latest Launcher
+              </Button>
             </GridContainer>
           </div>
         </Parallax>

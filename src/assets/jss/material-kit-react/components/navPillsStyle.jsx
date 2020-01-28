@@ -1,10 +1,9 @@
 import {
-  roseColor,
-  primaryColor,
-  infoColor,
-  successColor,
-  warningColor,
-  dangerColor
+  ROSE,
+  PRIMARY,
+  INFO,
+  WARNING,
+  ERROR
 } from "assets/jss/material-kit-react.jsx";
 
 const navPillsStyle = theme => ({
@@ -79,7 +78,7 @@ const navPillsStyle = theme => ({
   primary: {
     "&,&:hover": {
       color: "#FFFFFF",
-      backgroundColor: primaryColor,
+      backgroundColor: PRIMARY,
       boxShadow:
         "0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(156, 39, 176, 0.4)"
     }
@@ -87,7 +86,7 @@ const navPillsStyle = theme => ({
   info: {
     "&,&:hover": {
       color: "#FFFFFF",
-      backgroundColor: infoColor,
+      backgroundColor: INFO,
       boxShadow:
         "0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(76, 175, 80, 0.4)"
     }
@@ -95,7 +94,7 @@ const navPillsStyle = theme => ({
   success: {
     "&,&:hover": {
       color: "#FFFFFF",
-      backgroundColor: successColor,
+      backgroundColor: INFO,
       boxShadow:
         "0 2px 2px 0 rgba(76, 175, 80, 0.14), 0 3px 1px -2px rgba(76, 175, 80, 0.2), 0 1px 5px 0 rgba(76, 175, 80, 0.12)"
     }
@@ -103,7 +102,7 @@ const navPillsStyle = theme => ({
   warning: {
     "&,&:hover": {
       color: "#FFFFFF",
-      backgroundColor: warningColor,
+      backgroundColor: WARNING,
       boxShadow:
         "0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(255, 152, 0, 0.4)"
     }
@@ -111,7 +110,7 @@ const navPillsStyle = theme => ({
   danger: {
     "&,&:hover": {
       color: "#FFFFFF",
-      backgroundColor: dangerColor,
+      backgroundColor: ERROR,
       boxShadow:
         "0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(255, 152, 0, 0.4)"
     }
@@ -119,7 +118,7 @@ const navPillsStyle = theme => ({
   rose: {
     "&,&:hover": {
       color: "#FFFFFF",
-      backgroundColor: roseColor,
+      backgroundColor: ROSE,
       boxShadow:
         "0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(233, 30, 99, 0.4)"
     }

@@ -1,7 +1,7 @@
 import {
-  primaryColor,
-  dangerColor,
-  successColor,
+  PRIMARY,
+  ERROR,
+  INFO,
   defaultFont
 } from "assets/jss/material-kit-react.jsx";
 
@@ -17,17 +17,17 @@ const customInputStyle = {
       borderWidth: "1px !important"
     },
     "&:after": {
-      borderColor: primaryColor
+      borderColor: PRIMARY
     }
   },
   underlineError: {
     "&:after": {
-      borderColor: dangerColor
+      borderColor: ERROR
     }
   },
   underlineSuccess: {
     "&:after": {
-      borderColor: successColor
+      borderColor: INFO
     }
   },
   whiteUnderline: {
@@ -50,10 +50,10 @@ const customInputStyle = {
     }
   },
   labelRootError: {
-    color: dangerColor + " !important"
+    color: ERROR + " !important"
   },
   labelRootSuccess: {
-    color: successColor + " !important"
+    color: INFO + " !important"
   },
   formControl: {
     margin: "0 0 17px 0",
